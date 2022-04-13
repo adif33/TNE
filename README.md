@@ -1,5 +1,5 @@
 ## The Model
-The text tokens are first encoded by a SpanBERT MLM encoder. The encoded token representations are used to form a fixed length representation for the span of every NP. The span representations are encoded once more with a Transformer encoder, concatenated to the original encodings and fed to two MLPs to produce an \emph{anchor} and \emph{complement} representation for each NP. The representations are concatenated and fed to a Prediction head
+The text tokens are first encoded by a SpanBERT MLM encoder. The encoded token representations are used to form a fixed length representation for the span of every NP. The span representations are encoded once more with a Transformer encoder, concatenated to the original encodings and fed to two MLPs to produce an anchor and complement representation for each NP. The representations are concatenated and fed to a Prediction head
 
 <img src="https://github.com/adif33/TNE/blob/main/Architecture.png" width="400" height="400">
 
