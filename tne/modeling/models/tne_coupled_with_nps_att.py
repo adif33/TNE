@@ -7,7 +7,7 @@ from allennlp.data import TextFieldTensors, Vocabulary
 from allennlp.models.model import Model
 from allennlp.modules import FeedForward
 from allennlp.modules import Seq2SeqEncoder, TimeDistributed, TextFieldEmbedder
-from allennlp.modules.span_extractors import EndpointSpanExtractor
+from allennlp.modules.span_extractors import EndpointSpanExtractor , SelfAttentiveSpanExtractor
 from allennlp.nn import util, InitializerApplicator
 from allennlp.training.metrics import CategoricalAccuracy
 from allennlp.training.metrics.f1_measure import F1Measure
@@ -228,6 +228,7 @@ class TNECoupledModel_att(Model):
         contextualized_embeddings = self._context_layer(text_embeddings, text_mask)
         # Shape: (batch_size, num_spans, 2 * encoding_dim)
         span_embeddings = self._endpoint_span_extractor(contextualized_embeddings, spans) #just the encoding of nps
+
 
         return span_embeddings
 

@@ -2,7 +2,7 @@
 //   + SpanBERT-base
 
 local transformer_model = "SpanBERT/spanbert-large-cased";
-local max_length = 256;
+local max_length = 512;
 local max_span_width = 30;
 
 local num_heads = 1;
@@ -66,14 +66,14 @@ local num_labels = std.length(preposition_list);
     },
     "anchor_feedforward": {
         "input_dim": 2*span_embedding_dim,
-        "num_layers": 2,
+        "num_layers": 1,
         "hidden_dims": 500,
         "activations": "relu",
         "dropout": 0.3
     },
     "complement_feedforward": {
         "input_dim": 2*span_embedding_dim,
-        "num_layers": 2,
+        "num_layers": 1,
         "hidden_dims": 500,
         "activations": "relu",
         "dropout": 0.3
