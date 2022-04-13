@@ -8,10 +8,7 @@ conda activate tne
 pip install -r requirements.txt
 ```
 
-## Models
-
-We train the models using [allennlp](https://allennlp.org/)
-
+## Model
 To run our best model, run:
 
 ```bash
