@@ -1,5 +1,5 @@
 ## our model
-<img src="https://github.com/adif33/TNE/blob/main/Architecture.png" width="100" height="100">
+<img src="https://github.com/adif33/TNE/blob/main/Architecture.png" width="300" height="300">
 
 
 
