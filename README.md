@@ -1,5 +1,5 @@
 ## our model
-![My Image](Architecture.jpg)
+![My Image](Architecture.png)
 
 
 
