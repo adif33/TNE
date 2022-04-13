@@ -1,5 +1,5 @@
 ## our model
-![My Image](Architecture.png | width=100)
+<img src="https://https://github.com/adif33/TNE/blob/main/Architecture.png" width="100" height="100">
 
 
 
