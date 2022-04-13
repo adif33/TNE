@@ -1,3 +1,8 @@
+## our model
+![My Image](Architecture.jpg)
+
+
+
 ## Getting Started
 
 Install dependencies
@@ -8,8 +13,8 @@ conda activate tne
 pip install -r requirements.txt
 ```
 
-## Model
-To run our best model, run:
+## train
+To train our best model, run:
 
 ```bash
 allennlp train tne/modeling/configs/coupled_large_att.jsonnet \
